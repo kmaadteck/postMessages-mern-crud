@@ -10,12 +10,11 @@ const App = () => {
       <Provider store={store}>
         <Container maxWidth="lg">
           <AppBar position="static" color="inherit">
-            <Typography variant="h2"
-            align="center">
-            Post Box
+            <Typography variant="h2" align="center">
+              Post Box
             </Typography>
           </AppBar>
-        <PostMessages />
+          <PostMessages />
         </Container>
       </Provider>
     </>
