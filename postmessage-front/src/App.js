@@ -3,7 +3,7 @@ import PostMessages from "./components/PostMessages/PostMessages";
 import { Provider } from "react-redux";
 import { store } from "./actions/store";
 import { AppBar, Container, Typography } from "@material-ui/core";
-
+import ButterToast, { POS_TOP, POS_RIGHT } from "butter-toast";
 const App = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const App = () => {
             </Typography>
           </AppBar>
           <PostMessages />
+          <ButterToast position={{vertical: POS_TOP, horizontal:POS_RIGHT  }}/>
         </Container>
       </Provider>
     </>

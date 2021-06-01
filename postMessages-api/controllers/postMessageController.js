@@ -25,7 +25,7 @@ export const getPostMessage = async (req, res) => {
     message: req.body.message,
   };
 
-  await PostMessage.findOneAndUpdate(id, updatedPostMessage, (err) => {
+  await PostMessage.findByIdAndUpdate(id, updatedPostMessage, (err) => {
     if (!err) res.send(updatedPostMessage);
     else
       console.log(
