@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+## Installation of redux devTools extension
+https://github.com/reduxjs/redux-devtools/tree/master/extension
+    => in section
+      1.With Redux
+        1.1 Basic store
+        For a basic Redux store simply add:
+            const store = createStore(
+            reducer, /* preloadedState, */
+            +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()  // only the line => ex: actions/store.js => const store
+            );
+>>>>>>> develop
